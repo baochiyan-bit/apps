@@ -201,6 +201,19 @@ footer{max-width:760px;margin:0 auto;padding:24px 20px 40px;color:var(--sub);fon
 """
 
 
+def copy_landing(src, dst, app):
+    """landing/<slug>/ を docs/<slug>/ にコピー。HTML の {{CONTACT_EMAIL}} は連絡先に置き換える"""
+    for f in src.rglob("*"):
+        if f.is_dir():
+            continue
+        out = dst / f.relative_to(src)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        if f.suffix == ".html":
+            out.write_text(f.read_text(encoding="utf-8").replace("{{CONTACT_EMAIL}}", app["email"]), encoding="utf-8")
+        else:
+            out.write_bytes(f.read_bytes())
+
+
 def main():
     apps = load_apps()
     # 上書きで出力する（アプリをやめた場合は docs/<slug>/ を手で消す）
@@ -215,7 +228,12 @@ def main():
         (d / "privacy.html").write_text(page("プライバシーポリシー", app["name"], privacy_html(app), "../"), encoding="utf-8")
         (d / "terms.html").write_text(page("利用規約", app["name"], terms_html(app), "../"), encoding="utf-8")
         (d / "support.html").write_text(page("サポート", app["name"], support_html(app), "../"), encoding="utf-8")
-        (d / "index.html").write_text(page("サポート", app["name"], support_html(app), "../"), encoding="utf-8")
+        landing = ROOT / "landing" / app["slug"]
+        if landing.is_dir():
+            # 専用のトップページ（LP）があれば、それを index.html として使う（landing/<slug>/ を丸ごとコピー）
+            copy_landing(landing, d, app)
+        else:
+            (d / "index.html").write_text(page("サポート", app["name"], support_html(app), "../"), encoding="utf-8")
         (MEMO / f"{app['name']}.md").write_text(memo_md(app), encoding="utf-8")
 
     items = []
