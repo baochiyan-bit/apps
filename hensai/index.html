@@ -22,6 +22,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@700;900&display=swap">
 <link rel="preload" as="image" href="assets/home.webp">
+<!-- Google Play 公開後に直す所：title・description・og:description の「iPhoneアプリ」→「スマホアプリ」、
+     ヒーローの「iPhone アプリ ｜ 無料」→「iPhone・Android アプリ ｜ 無料」、
+     下の JSON-LD の operatingSystem →「iOS 17.0以降, Android 8.0以降」（Google Play のバッジ3か所と商標表記はコメントを外す） -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"返済管理","operatingSystem":"iOS 17.0以降","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"url":"https://baochiyan-bit.github.io/apps/hensai/","downloadUrl":"https://apps.apple.com/jp/app/id6816467747"}
 </script>
@@ -306,6 +309,9 @@ details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
       <a href="#features">機能</a><a href="#simulator">完済シミュレーション</a><a href="#price">料金</a><a href="#faq">よくある質問</a>
     </nav>
     <a class="badge" href="https://apps.apple.com/jp/app/id6816467747" aria-label="App Store からダウンロード"><img src="assets/badge-black.svg" alt="App Storeからダウンロード" width="105" height="38"></a>
+    <!-- Google Play 版は未公開。公開されたら、Google の公式バッジ画像を assets/badge-google-play.png に置いて、このコメントを外す
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.hensaikanri" aria-label="Google Play で手に入れよう"><img src="assets/badge-google-play.png" alt="Google Play で手に入れよう" height="38"></a>
+    -->
   </div>
 </header>
 
@@ -319,6 +325,9 @@ details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
       <p class="lead fade d1">いくつもの借入の残高・金利・返済日を、ひとつにまとめて管理。毎月いくら返せば、いつ完済できるのか。その答えを、日割りの利息計算で出します。</p>
       <div class="cta fade d2">
         <a class="badge" href="https://apps.apple.com/jp/app/id6816467747"><img src="assets/badge-black.svg" alt="App Storeからダウンロード" width="148" height="54"></a>
+        <!-- Google Play 公開後にコメントを外し、下の small を「iOS 17 以降の iPhone・Android 8.0 以降」に変える
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.hensaikanri"><img src="assets/badge-google-play.png" alt="Google Play で手に入れよう" height="54"></a>
+        -->
         <small>iOS 17 以降の iPhone<br>アカウント登録は不要です</small>
       </div>
     </div>
@@ -465,11 +474,11 @@ details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
 <section class="trust sec">
   <div class="wrap">
     <p class="eyebrow reveal">PRIVACY</p>
-    <h2 class="h2 reveal">お金のことは、<br>あなたの<em>iPhoneの中</em>だけに。</h2>
+    <h2 class="h2 reveal">お金のことは、<br>あなたの<em>スマホの中</em>だけに。</h2>
     <div class="grid">
-      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18.5h4"/></svg></div><h3>データは端末内に保存</h3><p>入力した借入や返済の記録は、サーバーに送りません。iCloud 同期は、設定でオンにしたときだけ。</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18.5h4"/></svg></div><h3>データは端末内に保存</h3><p>入力した借入や返済の記録は、サーバーに送りません。iPhone の iCloud 同期も、設定でオンにしたときだけ。</p></div>
       <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg></div><h3>アカウント登録なし</h3><p>メールアドレスも名前もいりません。ダウンロードしたら、すぐに使い始められます。</p></div>
-      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M9 10v1M15 10v1M12 10v3.5h-1M9.5 16.5c1.4 1 3.6 1 5 0"/></svg></div><h3>Face ID でロック</h3><p>人に見られたくない画面だからこそ。開くときに Face ID を求められます。バックアップの書き出しにも対応。</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M9 10v1M15 10v1M12 10v3.5h-1M9.5 16.5c1.4 1 3.6 1 5 0"/></svg></div><h3>顔認証・指紋認証でロック</h3><p>人に見られたくない画面だからこそ。開くときに Face ID や指紋認証を求められます。バックアップの書き出しにも対応。</p></div>
     </div>
   </div>
 </section>
@@ -499,8 +508,8 @@ details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
     <div>
       <details><summary>アプリの残高が、明細と少し合いません。</summary><div class="a">利息は「残高 × 年利 ÷ 365 × 日数」で計算しているため、金融機関ごとの端数処理の違いで数円〜数百円ずれることがあります。返済を記録するときに、明細の「利息」や「返済後の残高」を入力すると、その値に合わせて計算し直します。</div></details>
       <details><summary>無利息期間がある借入にも使えますか？</summary><div class="a">使えます。契約日と無利息の日数を入れると、その期間は優遇金利で、終わったあとは通常の金利で計算します。途中で金利が変わった場合も、変更日と新しい金利を登録できます。</div></details>
-      <details><summary>機種変更のときは、どうすればいいですか？</summary><div class="a">「設定」→「バックアップを書き出す」でファイルを保存し、新しい iPhone で「バックアップから復元」を選んでください。iCloud 同期をオンにしている場合は、同じ Apple ID でサインインすれば引き継がれます。</div></details>
-      <details><summary>プレミアムは月額ですか？</summary><div class="a">いいえ、990円の買い切りです。一度購入すれば、同じ Apple ID の端末で「購入を復元」から使えます。</div></details>
+      <details><summary>機種変更のときは、どうすればいいですか？</summary><div class="a">「設定」→「バックアップを書き出す」でファイルを保存し、新しい端末で「バックアップから復元」を選んでください。バックアップファイルは iPhone 版と Android 版で同じ形式なので、iPhone と Android の間の乗り換えにも使えます。iPhone どうしで iCloud 同期をオンにしている場合は、同じ Apple ID でサインインすれば引き継がれます。</div></details>
+      <details><summary>プレミアムは月額ですか？</summary><div class="a">いいえ、990円の買い切りです。一度購入すれば、同じ Apple ID（Android は同じ Google アカウント）の端末で「購入を復元」から使えます。App Store と Google Play の購入は別々なので、iPhone と Android の間では引き継げません。</div></details>
       <details><summary>借入や借り換えを勧められることはありますか？</summary><div class="a">ありません。このアプリは返済の管理と計算のためのもので、借入・借り換えの勧誘や助言は行いません。計算結果は目安なので、実際の金額は各金融機関の明細でご確認ください。</div></details>
     </div>
   </div>
@@ -525,6 +534,9 @@ details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
     <h2 class="h2 reveal">今日から、<br>ゼロまでのカウントダウンを。</h2>
     <div class="cta reveal">
       <a class="badge" href="https://apps.apple.com/jp/app/id6816467747"><img src="assets/badge-black.svg" alt="App Storeからダウンロード" width="160" height="58" style="height:58px"></a>
+      <!-- Google Play 公開後にコメントを外し、下の small を「無料 ・ iPhone（iOS 17 以降）・ Android（8.0 以降）」に変える
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.hensaikanri"><img src="assets/badge-google-play.png" alt="Google Play で手に入れよう" height="58" style="height:58px"></a>
+      -->
       <small>無料 ・ iPhone（iOS 17 以降）</small>
     </div>
   </div>
@@ -540,6 +552,10 @@ details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
     <div class="legal">
       本アプリの計算結果は目安です。実際の利息・請求額・残高は、各金融機関の明細やウェブサイトでご確認ください。本アプリは、借入・借り換え・返済方法についての助言や、金融商品の勧誘を行うものではありません。<br>
       Apple、Appleのロゴ、iPhone、Face ID は、米国およびその他の国で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。<br>
+      Android は Google LLC の商標です。<br>
+      <!-- Google Play のバッジを出したら、次の行のコメントを外す
+      Google Play および Google Play ロゴは Google LLC の商標です。<br>
+      -->
       © 2026 返済管理
     </div>
   </div>
