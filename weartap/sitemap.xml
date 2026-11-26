@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://weartap.app/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://weartap.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weartap.app/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weartap.app/en"/>
+  </url>
+  <url>
+    <loc>https://weartap.app/en</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://weartap.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weartap.app/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://weartap.app/en"/>
+  </url>
+  <url><loc>https://weartap.app/support</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://weartap.app/support_en</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://weartap.app/privacy</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://weartap.app/privacy_en</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://weartap.app/terms</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://weartap.app/terms_en</loc><lastmod>2026-11-26</lastmod></url>
+</urlset>

@@ -1,0 +1,35 @@
+# ウェアタップ（Weartap）
+
+> マウスピース矯正（クリアアライナー）を外していた時間を数えて、戻す時間を知らせる iPhone アプリ。ロック画面・ウィジェット・Apple Watch から、アプリを開かずに「外す」「戻す」を記録できる。治療後のリテーナーにも使える。日本の個人開発者が作っていて、問い合わせには開発者本人が日本語で返事をする。
+>
+> Weartap is an iPhone app that counts the time clear aligners are out and reminds you when to put them back. Log "out" and "in" from the Lock Screen, widgets or Apple Watch without opening the app. Works for retainers after treatment.
+
+## 基本情報
+
+- 対応: iPhone（iOS 17 以上）、Apple Watch。日本語・英語
+- 料金: アプリは無料。Pro は買い切り（日本 ¥3,000、米国 $14.99）。7日間のお試しつきで、お試しが終わっても自動では課金されない。サブスクリプションなし
+- 広告なし。アカウント登録なし。運営者のサーバーなし（記録と写真は端末と本人の iCloud にだけ保存）
+- どのメーカーのマウスピース（アライナー）でも使える
+- 医療機器ではない。装着時間の目標や治療の進め方は担当の歯科医師の指示に従う
+
+## できること
+
+- 外していた時間を数え、1日の目標（初期値22時間、変更可）までの残りを表示
+- 戻す時間のお知らせ（無料版は1日1回、Pro は戻すまで繰り返す）
+- 「外す」の押し忘れを、あとから −15分 のようにさかのぼって直せる
+- マウスピースの番号と交換日の管理、交換日のお知らせ
+- 歯の写真の記録と、2枚並べた比較
+- リテーナーのモード（夜だけつける人には毎晩つける時間をお知らせ）
+- CSV の書き出し、iCloud での同期と機種変更時の復元
+- Pro: ウィジェット・ロック画面・コントロールセンター・ショートカット・Apple Watch からの記録、ライブアクティビティ、1日の区切り時刻の変更
+
+## リンク
+
+- [日本語のトップページ](https://weartap.app/)
+- [English page](https://weartap.app/en)
+- [App Store（日本）](https://apps.apple.com/jp/app/id6825825230)
+- [App Store (US)](https://apps.apple.com/us/app/id6825825230)
+- [サポート・よくある質問](https://weartap.app/support)
+- [Support (English)](https://weartap.app/support_en)
+- [プライバシーポリシー](https://weartap.app/privacy)
+- [X @weartap](https://x.com/weartap)
