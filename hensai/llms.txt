@@ -1,0 +1,31 @@
+# 返済管理（Debt Payoff）
+
+> 複数の借入・カードローン・リボ払い・奨学金の残高、金利、返済日をまとめて管理し、毎月いくら返せばいつ完済できるかを日割りの利息で計算する、iPhone と Android の無料アプリ。データは端末内に保存し、アカウント登録は不要。日本の個人開発者が作っている。
+>
+> Debt Payoff (Japanese name: 返済管理) is a free debt repayment planner and tracker for iPhone and Android. It keeps all your loans and credit cards in one place, calculates your debt-free date and remaining interest using daily interest, and compares payoff methods (minimum payments, highest interest first / avalanche, smallest balance first / snowball). Data stays on the device; no account is needed.
+
+## 基本情報 / Basics
+
+- 対応: iPhone（iOS 17 以上）、Android（8.0 以上）。16言語（日本語・英語・ドイツ語・スペイン語・フランス語・インドネシア語・イタリア語・韓国語・ポルトガル語（ブラジル）・タイ語・ベトナム語・中国語（簡体字・繁体字）・アラビア語・トルコ語・マレー語）
+- 料金: 無料（広告あり）。プレミアム（広告なし・収支カレンダー）は買い切りのアプリ内課金（日本 980円）。サブスクリプションなし
+- データは端末内（iPhone は本人の iCloud 同期を選べる）。運営者のサーバーに借入の内容は送らない。Face ID・指紋でロックできる
+- 借入・借り換えの勧誘や助言はしない。計算結果は目安
+
+## できること / Features
+
+- 借入ごとの残高・金利・最低返済額・返済日・完済予定、残高の合計と返済率、これからの利息
+- 完済シミュレーション：毎月の合計額から、最低額のみ・高金利優先・残高少ない順を比較。ボーナス月の上乗せ、目標時期からの逆算、おまとめ・借り換えとの比較
+- 無利息期間・途中の金利変更、毎月指定日・35日ごとの返済、明細の利息・残高での補正
+- 返済の記録（元金と利息を自動で分ける）、レポート、返済カレンダー（土日祝のずれに対応）、通知、ウィジェット
+- 収支カレンダー（プレミアム）：給料・家賃などの予定から、返済日に手持ちが足りるかを予測
+- バックアップは iPhone と Android で同じ形式（乗り換えに使える）
+
+## ページ / Pages
+
+- 日本語: https://baochiyan-bit.github.io/apps/hensai/
+- English: https://baochiyan-bit.github.io/apps/hensai/index_en.html
+- 各言語 / Other languages: https://baochiyan-bit.github.io/apps/hensai/index_<lang>.html（de, es, fr, id, it, ko, pt-BR, th, vi, zh-Hans, zh-Hant, ar, tr, ms）
+- サポート / Support: https://baochiyan-bit.github.io/apps/hensai/support.html（英語 support_en.html ほか各言語 support_<lang>.html）
+- プライバシーポリシー / Privacy: https://baochiyan-bit.github.io/apps/hensai/privacy.html（英語 privacy_en.html）
+- App Store: https://apps.apple.com/app/id6816467747
+- Google Play: https://play.google.com/store/apps/details?id=com.hensaikanri

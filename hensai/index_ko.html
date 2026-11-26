@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>빚 갚기 - 대출·카드 상환 플래너 | 대출 상환 계산기·빚 청산 계획 | iPhone·Android 무료 앱</title>
+<meta name="description" content="대출·카드론·리볼빙을 한곳에서 관리하고 완제일과 남은 이자를 계산하세요. 눈덩이 방식 등 상환 비교까지, 계정 없이 쓰는 iPhone·Android 무료 앱.">
+<link rel="canonical" href="https://baochiyan-bit.github.io/apps/hensai/index_ko.html">
+<meta name="theme-color" content="#F3EFE6">
+<meta name="apple-itunes-app" content="app-id=6816467747">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="빚 갚기">
+<meta property="og:title" content="빚 갚기 – 빚에도 끝나는 날을 정하세요.">
+<meta property="og:description" content="모든 대출과 카드를 한곳에서 관리하고, 완제일을 계산하고, 상환 계획을 비교하세요. 데이터는 휴대폰에만 저장됩니다. 무료.">
+<meta property="og:url" content="https://baochiyan-bit.github.io/apps/hensai/index_ko.html">
+<meta property="og:image" content="https://baochiyan-bit.github.io/apps/hensai/assets/ko/og.png">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="preload" as="image" href="assets/ko/home.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"빚 갚기","alternateName":["返済管理","Debt Payoff"],"operatingSystem":"iOS 17.0+, Android 8.0+","applicationCategory":"FinanceApplication","inLanguage":"ko","description":"대출·카드론·리볼빙을 한곳에서 관리하고 완제일과 남은 이자를 계산하세요. 눈덩이 방식 등 상환 비교까지, 계정 없이 쓰는 iPhone·Android 무료 앱.","url":"https://baochiyan-bit.github.io/apps/hensai/index_ko.html","image":"https://baochiyan-bit.github.io/apps/hensai/assets/icon-256.png","screenshot":["https://baochiyan-bit.github.io/apps/hensai/assets/ko/home.webp"],"offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"installUrl":["https://apps.apple.com/app/id6816467747","https://play.google.com/store/apps/details?id=com.hensaikanri"],"availableLanguage":["ja","en","de","es","fr","id","it","ko","pt-BR","th","vi","zh-Hans","zh-Hant","ar","tr","ms"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"앱의 잔액이 명세서와 조금 달라요.","acceptedAnswer":{"@type":"Answer","text":"이자는 잔액 × 연이율 ÷ 365 × 일수로 계산하기 때문에, 금융사마다 다른 끝수 처리로 약간의 차이가 생길 수 있습니다. 상환을 기록할 때 명세서의 이자나 상환 후 잔액을 입력하면 그 숫자를 기준으로 다시 계산합니다."}},{"@type":"Question","name":"무이자 기간이 있는 대출도 관리할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네. 계약일과 무이자 일수를 입력하면 그 기간에는 우대 금리를, 이후에는 정상 금리를 적용합니다. 나중에 금리가 바뀌면 변경일과 새 금리를 추가할 수 있습니다."}},{"@type":"Question","name":"휴대폰을 바꾸면 어떻게 옮기나요?","acceptedAnswer":{"@type":"Answer","text":"설정 → 백업 내보내기로 파일을 저장한 뒤, 새 휴대폰에서 백업에서 복원을 선택하세요. 백업 파일은 iPhone과 Android에서 같은 형식이라 iPhone과 Android 사이에서도 옮길 수 있습니다. iCloud 동기화를 켠 iPhone끼리는 같은 Apple ID로 로그인하면 데이터가 그대로 이어집니다."}},{"@type":"Question","name":"프리미엄은 구독인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 1회 구매입니다. 구매 후에는 같은 Apple ID(Android는 같은 Google 계정)로 로그인한 기기에서 구매 복원을 하면 됩니다. App Store와 Google Play 구매는 별개이므로 iPhone과 Android 사이에서는 프리미엄이 이어지지 않습니다."}},{"@type":"Question","name":"앱에서 대출이나 대환을 권유하나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 이 앱은 상환을 관리하고 계산하기 위한 도구입니다. 대출이나 대환을 권유하거나 조언하지 않습니다. 계산 결과는 추정치이니 실제 금액은 금융사 명세서로 확인해 주세요."}}]}
+</script>
+<link rel="alternate" hreflang="ja" href="https://baochiyan-bit.github.io/apps/hensai/">
+<link rel="alternate" hreflang="en" href="https://baochiyan-bit.github.io/apps/hensai/index_en.html">
+<link rel="alternate" hreflang="de" href="https://baochiyan-bit.github.io/apps/hensai/index_de.html">
+<link rel="alternate" hreflang="es" href="https://baochiyan-bit.github.io/apps/hensai/index_es.html">
+<link rel="alternate" hreflang="fr" href="https://baochiyan-bit.github.io/apps/hensai/index_fr.html">
+<link rel="alternate" hreflang="id" href="https://baochiyan-bit.github.io/apps/hensai/index_id.html">
+<link rel="alternate" hreflang="it" href="https://baochiyan-bit.github.io/apps/hensai/index_it.html">
+<link rel="alternate" hreflang="ko" href="https://baochiyan-bit.github.io/apps/hensai/index_ko.html">
+<link rel="alternate" hreflang="pt-BR" href="https://baochiyan-bit.github.io/apps/hensai/index_pt-BR.html">
+<link rel="alternate" hreflang="th" href="https://baochiyan-bit.github.io/apps/hensai/index_th.html">
+<link rel="alternate" hreflang="vi" href="https://baochiyan-bit.github.io/apps/hensai/index_vi.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://baochiyan-bit.github.io/apps/hensai/index_zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://baochiyan-bit.github.io/apps/hensai/index_zh-Hant.html">
+<link rel="alternate" hreflang="ar" href="https://baochiyan-bit.github.io/apps/hensai/index_ar.html">
+<link rel="alternate" hreflang="tr" href="https://baochiyan-bit.github.io/apps/hensai/index_tr.html">
+<link rel="alternate" hreflang="ms" href="https://baochiyan-bit.github.io/apps/hensai/index_ms.html">
+<link rel="alternate" hreflang="x-default" href="https://baochiyan-bit.github.io/apps/hensai/index_en.html">
+<style>
+:root{
+  --paper:#F3EFE6; --paper2:#EAE3D4; --card:#FBF9F4;
+  --ink:#0F1E1C; --ink2:#34433F; --mute:#5C6764; --line:rgba(15,30,28,.12);
+  --teal:#0D9488; --teal-d:#0A5E56; --mint:#CBEBE4; --coral:#D9532E; --gold:#E9B949;
+  --serif:"Noto Serif JP",serif; --sans:"Noto Sans JP",system-ui,sans-serif; --num:"Noto Sans JP",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;letter-spacing:.02em;font-feature-settings:"palt";-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+body{word-break:auto-phrase;line-break:strict}
+h1,h2,h3,.lead,.caps p,summary{text-wrap:balance}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+/* 紙の質感（ノイズ） */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.16em;color:var(--teal-d);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.num{font-family:var(--num);font-variant-numeric:lining-nums tabular-nums;font-optical-sizing:auto}
+.badge{display:inline-block;line-height:0;border-radius:10px;transition:transform .4s var(--ease)}
+.badge:hover{transform:translateY(-2px)}
+.badge img{height:54px;width:auto}
+
+/* ── ヘッダー ── */
+.hd{position:fixed;inset:0 0 auto;z-index:50;transition:transform .5s var(--ease),background .3s}
+.hd.hide{transform:translateY(-100%)}
+.hd.solid{background:rgba(243,239,230,.82);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 var(--line)}
+.hd .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:17px;letter-spacing:.08em}
+.brand img{width:32px;height:32px;border-radius:8px;box-shadow:0 2px 8px rgba(13,148,136,.3)}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:14px;font-weight:500}
+.nav a{text-decoration:none;position:relative;color:var(--ink2)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.hd .badge img{height:38px}
+@media(max-width:860px){.nav{display:none}.hd .badge{margin-left:auto}}
+
+/* ── ヒーロー ── */
+.hero{position:relative;min-height:100svh;padding:120px 0 80px;display:flex;align-items:center;overflow:hidden;
+  background:repeating-linear-gradient(to bottom,transparent 0 47px,var(--line) 47px 48px)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 78% 45%,rgba(13,148,136,.16),transparent 70%),linear-gradient(to bottom,var(--paper) 0,transparent 18%,transparent 82%,var(--paper));pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;width:100%}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(56px,17vw,120px);line-height:1.06;white-space:nowrap;letter-spacing:-.01em;margin:26px 0 30px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%);animation:rise 1.1s var(--ease) forwards}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.1s}.hero h1 .ln:nth-child(3)>span{animation-delay:.2s}
+@media(min-width:861px){.hero h1{font-size:clamp(56px,9.2vw,136px)}}
+.hero h1 em{font-style:normal;color:var(--teal);background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 94%/0% .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone;animation:under 1s 1s var(--ease) forwards}
+.hero h1 .ln:nth-child(3) em{animation-delay:1.35s}
+@keyframes under{to{background-size:100% .08em}}
+.lead{font-size:clamp(16px,1.3vw,18px);font-weight:500;color:var(--ink2);max-width:29em}
+.cta{display:flex;align-items:center;gap:20px;margin-top:38px;flex-wrap:wrap}
+.cta small{font-size:13px;color:var(--mute);line-height:1.6}
+.fade{opacity:0;transform:translateY(18px);animation:fadeup 1s var(--ease) forwards}
+.d1{animation-delay:.35s}.d2{animation-delay:.5s}.d3{animation-delay:.65s}.d4{animation-delay:.8s}
+@keyframes rise{to{transform:none}}
+@keyframes fadeup{to{opacity:1;transform:none}}
+@keyframes draw{to{transform:scaleX(1)}}
+.stage{position:relative;justify-self:center;width:min(380px,82vw);aspect-ratio:775/1600}
+.stage .phone{position:absolute;inset:0;filter:drop-shadow(0 40px 60px rgba(15,30,28,.28)) drop-shadow(0 8px 16px rgba(15,30,28,.12));opacity:0;transform:translateY(60px) rotate(3deg);animation:phone 1.4s .3s var(--ease) forwards}
+@keyframes phone{to{opacity:1;transform:rotate(3deg)}}
+.chip{position:absolute;z-index:3;background:var(--card);border-radius:18px;padding:14px 18px;box-shadow:0 18px 40px rgba(15,30,28,.16),0 0 0 1px var(--line);opacity:0;animation:pop .9s var(--ease) forwards;white-space:nowrap}
+.chip b{display:block;font-size:11px;font-weight:700;color:var(--mute);letter-spacing:.12em}
+.chip .num{font-size:28px;font-weight:500;line-height:1.2}
+.chip.c1{left:-30%;top:41%;animation-delay:1.1s}
+.chip.c1 .num{color:var(--teal-d)}
+.chip.c2{right:-16%;top:63%;animation-delay:1.3s}
+.chip.c2 .num{color:var(--coral)}
+.chip.c3{left:-14%;bottom:8%;animation-delay:1.5s;display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700}
+.chip.c3 i{width:26px;height:26px;border-radius:50%;background:var(--teal);display:grid;place-items:center;color:#fff;font-style:normal;font-size:14px}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
+.float{animation:pop .9s var(--ease) forwards,bob 6s ease-in-out infinite}
+.scrollhint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:3;font-size:11px;letter-spacing:.3em;color:var(--mute);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scrollhint::after{content:"";width:1px;height:42px;background:linear-gradient(var(--ink),transparent);animation:hint 2.2s ease-in-out infinite;transform-origin:top}
+@keyframes hint{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@media(max-width:860px){
+  .hero{padding-top:104px}
+  .hero .wrap{grid-template-columns:1fr;gap:56px}
+  .stage{width:min(300px,68vw)}
+  .chip .num{font-size:22px}.chip.c1{left:-22%}.chip.c2{right:-14%}
+  .scrollhint{display:none}
+}
+
+/* ── カウントダウン（スクロール連動） ── */
+.story{position:relative;height:340vh;background:var(--ink);color:var(--paper)}
+.story .pin{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto auto auto;padding:96px var(--pad) 48px}
+.story .eyebrow{color:var(--mint)}
+.story .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;max-width:1240px;margin:0 auto;width:100%}
+.balance{font-size:clamp(56px,13vw,210px);font-weight:300;line-height:.95;letter-spacing:-.03em;margin-top:18px;white-space:nowrap}
+.balance small{font-family:var(--serif);font-size:.32em;font-weight:700;margin-left:.15em;letter-spacing:0}
+.when{text-align:right}
+.when b{display:block;font-size:12px;letter-spacing:.24em;color:var(--mint);font-weight:700}
+.when .num{font-size:clamp(28px,4vw,56px);font-weight:400}
+.chart{position:relative;max-width:1240px;margin:0 auto;width:100%;min-height:0}
+.chart svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.chart .grid line{stroke:rgba(243,239,230,.1)}
+.chart .area{fill:url(#ga)}
+.chart .curve{fill:none;stroke:var(--mint);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.chart .dot{fill:var(--gold)}
+.chart .halo{fill:var(--gold);opacity:.25}
+.chart text{fill:rgba(243,239,230,.6);font:12px var(--sans);letter-spacing:.08em}
+.axis{display:flex;justify-content:space-between;max-width:1240px;margin:8px auto 18px;width:100%;font:400 13px var(--num);color:rgba(243,239,230,.6);letter-spacing:.08em}
+.caps{position:relative;max-width:1240px;margin:0 auto;width:100%;height:4.4em;font-family:var(--serif);font-weight:700;font-size:clamp(20px,2.6vw,34px);line-height:1.45}
+.caps p{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.caps p.on{opacity:1;transform:none}
+.caps em{font-style:normal;color:var(--gold)}
+@media(max-width:860px){.when{text-align:left}.story .head{gap:4px}}
+.stamp{position:absolute;right:max(var(--pad),calc((100vw - 1240px)/2 + 20px));top:42%;width:clamp(130px,16vw,210px);aspect-ratio:1;color:var(--coral);opacity:0;transform:scale(1.8) rotate(-28deg);transition:opacity .25s,transform .45s cubic-bezier(.3,1.6,.5,1);pointer-events:none;mix-blend-mode:screen}
+.stamp.on{opacity:.95;transform:scale(1) rotate(-12deg)}
+.stamp svg{width:100%;height:100%}
+.note{font-size:11px;color:rgba(243,239,230,.6);max-width:1240px;margin:10px auto 0;width:100%}
+
+/* ── 共通セクション ── */
+section{position:relative}
+.sec{padding:clamp(96px,14vw,180px) 0}
+.h2{font-family:var(--serif);font-weight:900;font-size:clamp(34px,5.4vw,76px);line-height:1.18;letter-spacing:-.005em;margin:22px 0 26px}
+.h2 em{font-style:normal;color:var(--teal);white-space:nowrap}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ── 機能（スマホ固定＋説明が流れる） ── */
+.features .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,120px)}
+.device{position:sticky;top:12vh;height:76vh;display:grid;place-items:center}
+.device .frame{position:relative;height:100%;aspect-ratio:775/1600;max-width:100%}
+.device img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transform:scale(.97) translateY(10px);transition:opacity .7s var(--ease),transform .9s var(--ease);filter:drop-shadow(0 30px 50px rgba(15,30,28,.22))}
+.device img.on{opacity:1;transform:none}
+.device .ring{position:absolute;width:118%;aspect-ratio:1;border-radius:50%;border:1px dashed rgba(13,148,136,.35);animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.steps{padding:6vh 0 10vh}
+.step{min-height:78vh;display:flex;flex-direction:column;justify-content:center;opacity:.22;transition:opacity .6s var(--ease)}
+.step.on{opacity:1}
+.step .no{font-family:var(--num);font-style:italic;font-size:20px;color:var(--teal)}
+.step h3{font-family:var(--serif);font-weight:900;font-size:clamp(28px,3.4vw,46px);line-height:1.3;margin:10px 0 18px}
+.step p{color:var(--ink2);max-width:28em}
+.step ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+.step li{display:flex;gap:12px;font-size:15px;color:var(--ink2)}
+.step li::before{content:"";flex:none;width:18px;height:18px;margin-top:.35em;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A5E56' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.step .shot{display:none}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--teal-d);background:var(--mint);padding:3px 10px;border-radius:99px;margin-left:10px;vertical-align:middle;font-family:var(--sans)}
+@media(max-width:860px){
+  .features .wrap{grid-template-columns:1fr}
+  .device{display:none}
+  .step{min-height:0;opacity:1;padding:40px 0;border-top:1px solid var(--line)}
+  .step .shot{display:block;width:min(270px,72vw);margin:30px auto 0;filter:drop-shadow(0 24px 40px rgba(15,30,28,.2))}
+}
+
+/* ── 比較の帯 ── */
+.strip{border-block:1px solid var(--line);overflow:hidden;padding:22px 0;background:var(--paper2)}
+.strip .track{display:flex;gap:56px;width:max-content;animation:marq 40s linear infinite;font-family:var(--serif);font-weight:700;font-size:clamp(20px,2.2vw,28px);color:var(--ink2)}
+.strip span{display:flex;align-items:center;gap:56px}
+.strip span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ── シミュレーター ── */
+.sim{background:var(--ink);color:var(--paper);overflow:hidden}
+.sim .eyebrow{color:var(--mint)}
+.sim .h2 em{color:var(--gold)}
+.sim .lead{color:rgba(243,239,230,.7)}
+.simbox{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,4vw,64px);margin-top:56px;align-items:stretch}
+.ctrls{display:grid;gap:30px;align-content:start}
+.field label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:rgba(243,239,230,.7);font-weight:500}
+.field output{font-family:var(--num);font-size:30px;color:var(--paper);font-weight:400}
+.field output small{font-family:var(--sans);font-size:14px;margin-left:4px;color:rgba(243,239,230,.6)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;margin-top:6px;cursor:pointer;--p:50%}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:linear-gradient(to right,var(--mint) var(--p),rgba(243,239,230,.16) var(--p))}
+input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:linear-gradient(to right,var(--mint) var(--p),rgba(243,239,230,.16) var(--p))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--paper);margin-top:-10px;box-shadow:0 0 0 6px rgba(203,235,228,.18);transition:box-shadow .2s}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border:0;border-radius:50%;background:var(--paper);box-shadow:0 0 0 6px rgba(203,235,228,.18)}
+input[type=range]:active::-webkit-slider-thumb{box-shadow:0 0 0 10px rgba(203,235,228,.25)}
+.result{background:rgba(243,239,230,.05);border:1px solid rgba(243,239,230,.12);border-radius:28px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column}
+.result .big b{display:block;font-size:12px;letter-spacing:.24em;color:var(--mint);font-weight:700}
+.result .big .num{font-size:clamp(44px,5.6vw,80px);line-height:1.1;font-weight:300}
+.result .big .num small{font-family:var(--serif);font-size:.36em;font-weight:700;margin-left:.1em}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0 10px;padding-top:22px;border-top:1px solid rgba(243,239,230,.12)}
+.kpis b{display:block;font-size:12px;color:rgba(243,239,230,.55);font-weight:500}
+.kpis .num{font-size:clamp(18px,1.9vw,24px)}
+.kpis .warm{color:#F3A07F}
+.mini{flex:1;min-height:150px;position:relative;margin-top:12px}
+.mini svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.mini .a{fill:none;stroke:var(--mint);stroke-width:2.5;transition:d .5s var(--ease)}
+.mini .b{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:5 5;transition:d .5s var(--ease)}
+.legend{display:flex;gap:18px;font-size:12px;color:rgba(243,239,230,.6);margin-top:8px}
+.legend i{display:inline-block;width:16px;height:2px;background:var(--mint);vertical-align:middle;margin-right:6px}
+.legend i.g{background:repeating-linear-gradient(to right,var(--gold) 0 4px,transparent 4px 7px)}
+.tip{margin-top:16px;padding:14px 18px;border-radius:16px;background:rgba(233,185,73,.12);color:#F6D98F;font-size:14px}
+.tip.bad{background:rgba(217,83,46,.16);color:#F7B29C}
+.simnote{font-size:12px;color:rgba(243,239,230,.6);margin-top:20px}
+@media(max-width:860px){.simbox{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
+
+/* ── 安心 ── */
+.trust .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.card{background:var(--card);border-radius:28px;padding:34px 30px 32px;box-shadow:0 0 0 1px var(--line);transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:0 0 0 1px var(--line),0 30px 50px -20px rgba(15,30,28,.18)}
+.card .ic{width:52px;height:52px;border-radius:16px;background:var(--mint);display:grid;place-items:center;margin-bottom:26px}
+.card .ic svg{width:26px;height:26px;stroke:var(--teal-d);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-family:var(--serif);font-weight:900;font-size:22px;line-height:1.45;margin-bottom:10px}
+.card p{font-size:15px;color:var(--ink2)}
+@media(max-width:860px){.trust .grid{grid-template-columns:1fr}}
+
+/* ── 料金 ── */
+.price .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px;max-width:980px}
+.plan{border-radius:28px;padding:40px 36px;box-shadow:0 0 0 1px var(--line);background:var(--card)}
+.plan.pro{background:var(--teal-d);color:var(--paper);box-shadow:none;position:relative;overflow:hidden}
+.plan.pro::after{content:"";position:absolute;width:340px;height:340px;right:-120px;top:-140px;border-radius:50%;background:radial-gradient(rgba(233,185,73,.35),transparent 70%)}
+.plan h3{font-size:14px;letter-spacing:.2em;font-weight:700}
+.plan .p{font-family:var(--num);font-size:64px;font-weight:300;line-height:1.1;margin:12px 0 4px}
+.plan .p small{font-family:var(--serif);font-size:20px;font-weight:700;margin-left:4px}
+.plan .s{font-size:13px;opacity:.7}
+.plan ul{list-style:none;margin-top:26px;display:grid;gap:12px;font-size:15px;position:relative;z-index:1}
+.plan li{padding-left:22px;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:1px;background:currentColor}
+@media(max-width:760px){.price .grid{grid-template-columns:1fr}}
+
+/* ── FAQ ── */
+.faq .h2{font-size:clamp(34px,4.2vw,58px)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,100px)}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:26px 48px 26px 0;position:relative;font-weight:700;font-size:17px;line-height:1.6}
+summary::-webkit-details-marker{display:none}
+summary::after,summary::before{content:"";position:absolute;right:8px;top:50%;width:16px;height:1.5px;background:var(--ink);transition:transform .4s var(--ease)}
+summary::before{transform:rotate(90deg)}
+details[open] summary::before{transform:rotate(0)}
+details .a{padding:0 0 28px;color:var(--ink2);font-size:15px;max-width:42em}
+.contact{margin-top:32px;font-size:15px;color:var(--ink2)}
+.contact a{color:var(--teal-d);font-weight:700}
+@media(max-width:860px){.faq .wrap{grid-template-columns:1fr}}
+
+/* ── 相談窓口 ── */
+.help{background:var(--paper2);padding:clamp(64px,8vw,100px) 0}
+.help .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.help h2{font-family:var(--serif);font-weight:900;font-size:clamp(24px,2.8vw,34px);line-height:1.5}
+.help p{color:var(--ink2);font-size:15px;margin-top:14px}
+.help ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.help li{background:var(--card);border-radius:20px;padding:22px 22px 20px;box-shadow:0 0 0 1px var(--line)}
+.help li b{display:block;font-size:14px}
+.help li span{display:block;font-size:12px;color:var(--mute);margin-top:4px;line-height:1.6}
+.help li a{display:inline-block;margin-top:12px;font-family:var(--num);font-size:22px;text-decoration:none;color:var(--teal-d)}
+@media(max-width:960px){.help .wrap{grid-template-columns:1fr}.help ul{grid-template-columns:1fr}}
+
+/* ── 最後のCTA ── */
+.final{padding:clamp(110px,16vw,200px) 0;text-align:center;overflow:hidden}
+.final .wrap{position:relative;z-index:1}
+.final .icon{width:96px;height:96px;border-radius:22px;margin:0 auto 34px;box-shadow:0 20px 40px -10px rgba(13,148,136,.55)}
+.final .h2{margin:0 auto 34px;max-width:14em}
+.final .cta{justify-content:center;flex-direction:column;gap:14px}
+
+/* ── フッター ── */
+.ft{background:var(--ink);color:rgba(243,239,230,.7);padding:64px 0 48px;font-size:13px}
+.ft .row{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+.ft .brand{color:var(--paper)}
+.ft nav{display:flex;gap:24px;flex-wrap:wrap}
+.ft nav a{text-decoration:none}
+.ft nav a:hover{color:var(--paper)}
+.ft .legal{margin-top:36px;padding-top:24px;border-top:1px solid rgba(243,239,230,.12);font-size:11.5px;line-height:1.9;color:rgba(243,239,230,.6)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+  .hero h1 .ln>span{transform:none}
+}
+/* Google Play のバッジを並べる（11/26） */
+.hd .badge+.badge{margin-left:-16px}
+.final .cta{flex-direction:row;flex-wrap:wrap}.final .cta small{flex-basis:100%;text-align:center}
+@media(max-width:480px){.hd .badge img{height:30px;width:auto}.hd .wrap{gap:20px}.hd .badge+.badge{margin-left:-12px}}
+/* 言語の切り替え・要点（多言語化 11/26） */
+.langs{margin-top:28px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;line-height:1.7}
+.langs span{color:rgba(243,239,230,.5)}
+.langs a{text-decoration:none;color:rgba(243,239,230,.75)}
+.langs a:hover,.langs a[aria-current]{color:var(--paper);text-decoration:underline}
+.aio{padding:clamp(64px,8vw,110px) 0 0}
+.aio .box{max-width:980px;background:var(--card);border-radius:28px;padding:clamp(26px,4vw,44px);box-shadow:0 0 0 1px var(--line)}
+.aio h2{font-family:var(--serif);font-weight:900;font-size:clamp(22px,2.6vw,30px);line-height:1.4;margin-bottom:14px}
+.aio ul{margin:0;padding-left:1.2em;color:var(--ink2);font-size:15px;line-height:1.9}
+/* 言語ごと */
+:root{--serif:"Noto Serif KR",serif;--sans:"Noto Sans KR",system-ui,sans-serif;--num:"Noto Sans KR",system-ui,sans-serif}
+body{font-feature-settings:normal}
+.hero h1{font-size:clamp(48px,14vw,100px)}@media(min-width:861px){.hero h1{font-size:clamp(56px,7.6vw,116px)}}
+.balance{font-size:clamp(40px,8.4vw,150px)}
+.plan .p{font-size:clamp(34px,4.4vw,52px)}.brand{white-space:nowrap}@media(max-width:480px){.hd .brand{font-size:15px;letter-spacing:.02em}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="hd" id="hd">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="빚 갚기 – 맨 위로"><img src="assets/icon-256.png" alt="" width="32" height="32">빚 갚기</a>
+    <nav class="nav" aria-label="페이지 목차">
+      <a href="#features">기능</a><a href="#simulator">상환 계산기</a><a href="#price">요금</a><a href="#faq">자주 묻는 질문</a>
+    </nav>
+    <a class="badge" href="https://apps.apple.com/app/id6816467747" aria-label="App Store에서 다운로드하기"><img src="assets/badges/as_ko.svg" alt="App Store에서 다운로드하기" height="38" style="height:38px;width:auto"></a>
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.hensaikanri&amp;hl=ko" aria-label="Google Play에서 다운로드하기"><img src="assets/badges/gp_ko.png" alt="Google Play에서 다운로드하기" height="38" style="height:38px;width:auto"></a>
+  </div>
+</header>
+
+<main id="main">
+<!-- ヒーロー -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow fade">iPhone·Android 앱 | 무료</p>
+      <h1><span class="ln"><span>빚에도</span></span><span class="ln"><span><em>끝나는 날</em>을</span></span><span class="ln"><span><em>정하세요</em>.</span></span></h1>
+      <p class="lead fade d1">모든 대출의 잔액, 금리, 상환일을 한곳에 모아 두세요. 매달 얼마씩 갚아야 할지, 언제 다 갚을 수 있을지 앱이 이자를 일 단위로 계산해 알려 드립니다.</p>
+      <div class="cta fade d2">
+        <a class="badge" href="https://apps.apple.com/app/id6816467747"><img src="assets/badges/as_ko.svg" alt="App Store에서 다운로드하기" height="54" style="height:54px;width:auto"></a>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.hensaikanri&amp;hl=ko"><img src="assets/badges/gp_ko.png" alt="Google Play에서 다운로드하기" height="54" style="height:54px;width:auto"></a>
+        <small>iOS 17 이상 iPhone · Android 8.0 이상<br>계정 필요 없음</small>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <img class="phone" src="assets/ko/home.webp" alt="" width="775" height="1632" fetchpriority="high">
+      <div class="chip c1"><b>완제 예정</b><span class="num">2029년 2월</span></div>
+      <div class="chip c2"><b>앞으로 낼 이자</b><span class="num">₩1,000,807</span></div>
+      <div class="chip c3"><i>✓</i>이번 달 4건 상환 완료</div>
+    </div>
+  </div>
+  <div class="scrollhint">SCROLL</div>
+</section>
+
+<!-- スクロールで残高がゼロになる -->
+<section class="story" id="story" aria-label="잔액이 0이 될 때까지">
+  <div class="pin">
+    <div class="head">
+      <div>
+        <p class="eyebrow">다섯 곳에서 돈을 빌렸다면</p>
+        <p class="balance num" aria-live="off"><span id="bal"></span></p>
+      </div>
+      <div class="when"><b>MONTH</b><span class="num" id="mon">2026.10</span></div>
+    </div>
+    <div class="chart" id="chart">
+      <svg viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="ga" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#CBEBE4" stop-opacity=".22"/><stop offset="1" stop-color="#CBEBE4" stop-opacity="0"/></linearGradient>
+          <clipPath id="clip"><rect id="cliprect" x="0" y="-20" width="0" height="440"/></clipPath></defs>
+        <g class="grid"><line x1="0" x2="1000" y1="0" y2="0"/><line x1="0" x2="1000" y1="133" y2="133"/><line x1="0" x2="1000" y1="266" y2="266"/><line x1="0" x2="1000" y1="400" y2="400"/></g>
+        <g clip-path="url(#clip)"><path class="area" id="area"/><path class="curve" id="curve" vector-effect="non-scaling-stroke"/></g>
+      </svg>
+      <svg viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true" style="pointer-events:none"><circle class="halo" id="halo" r="0"/></svg>
+    </div>
+    <div class="axis"><span>2026.10</span><span id="ax-end"></span></div>
+    <div class="caps">
+      <p class="on">대출을 모두 합치면 <em id="c-total"></em>.<br>금리도 상환일도 금융사마다 제각각입니다.</p>
+      <p>매달 <em id="c-budget"></em>씩, 금리가 높은 순서로 갚습니다.<br>한 건을 다 갚으면 그만큼을 다음 대출로 돌립니다.</p>
+      <p><em id="enddate"></em>에 잔액이 0이 됩니다.<br>끝이 보이면 계속 갈 수 있습니다.</p>
+    </div>
+    <p class="note">*앱의 샘플 데이터로 계산한 예시입니다. 실제 결과는 대출 조건에 따라 달라집니다.</p>
+    <div class="stamp" id="stamp" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <text x="100" y="122" text-anchor="middle" fill="currentColor" style="font:900 64px 'Noto Serif KR',serif;letter-spacing:4px">완제</text>
+      <text x="100" y="62" text-anchor="middle" fill="currentColor" style="font:700 14px 'Noto Sans KR',sans-serif;letter-spacing:3px">PAID OFF</text>
+      <text x="100" y="158" text-anchor="middle" fill="currentColor" style="font:500 15px 'Noto Sans KR',sans-serif;letter-spacing:2px" id="stampdate">2029.04</text></svg>
+  </div>
+  </div>
+</section>
+
+<!-- 機能 -->
+<section class="features sec" id="features">
+  <div class="wrap">
+    <div class="device" aria-hidden="true">
+      <div class="ring"></div>
+      <div class="frame">
+        <img class="on" src="assets/ko/home.webp" alt="" width="775" height="1632" loading="lazy" data-k="0">
+        <img src="assets/ko/simulation.webp" alt="" width="775" height="1632" loading="lazy" data-k="1">
+        <img src="assets/ko/loans.webp" alt="" width="775" height="1632" loading="lazy" data-k="2">
+        <img src="assets/ko/calendar.webp" alt="" width="775" height="1632" loading="lazy" data-k="3">
+        <img src="assets/ko/breakdown.webp" alt="" width="775" height="1632" loading="lazy" data-k="4">
+        <img src="assets/ko/cashflow.webp" alt="" width="775" height="1632" loading="lazy" data-k="5">
+      </div>
+    </div>
+    <div class="steps">
+      <p class="eyebrow reveal">FEATURES</p>
+      <h2 class="h2 reveal">보이지 않으니까<br>불안한 겁니다.</h2>
+      <article class="step on" data-k="0">
+        <span class="no">01</span>
+        <h3>모든 대출을<br>한 화면에.</h3>
+        <p>카드론, 리볼빙, 학자금 대출까지. 총잔액, 지금까지 갚은 금액, 이번 달 상환액, 앞으로 낼 이자를 한눈에 확인하세요.</p>
+        <ul><li>이번 달 상환은 대출별로 체크</li><li>같은 날 상환일은 한데 묶어 표시</li></ul>
+        <img class="shot" src="assets/ko/home.webp" alt="총잔액, 완제 예정일, 이번 달 상환액이 표시된 홈 화면" width="775" height="1632" loading="lazy">
+      </article>
+      <article class="step" data-k="1">
+        <span class="no">02</span>
+        <h3>어떤 대출부터 갚아야<br>가장 빨리 끝날까요?</h3>
+        <p>매달 갚을 총액만 정하면 됩니다. 최소 금액만 갚을 때, 금리가 높은 것부터 갚을 때(눈사태 방식), 잔액이 적은 것부터 갚을 때(눈덩이 방식)를 비교해 방식별 이자 차이와 완제일을 보여 줍니다.</p>
+        <ul><li>다 갚은 대출의 상환액은 다음 대출로 자동으로 넘어감</li><li>보너스 달 추가 상환, 목표일에서 거꾸로 계산</li><li>대환·통합 대출과도 비교</li></ul>
+        <img class="shot" src="assets/ko/simulation.webp" alt="방식별 완제일과 총이자를 비교하는 시뮬레이션 화면" width="775" height="1632" loading="lazy">
+      </article>
+      <article class="step" data-k="2">
+        <span class="no">03</span>
+        <h3>대출마다<br>결승선을.</h3>
+        <p>대출별 금리, 최소 상환액, 다음 상환일, 완제일을 확인하세요. 무이자 기간 같은 우대 금리와 중간에 바뀌는 금리도 지원합니다.</p>
+        <ul><li>매월 지정일 상환, 35일 주기 상환</li><li>명세서의 이자와 잔액에 맞춰 조정</li></ul>
+        <img class="shot" src="assets/ko/loans.webp" alt="대출별 잔액, 진행률, 완제일이 표시된 대출 목록" width="775" height="1632" loading="lazy">
+      </article>
+      <article class="step" data-k="3">
+        <span class="no">04</span>
+        <h3>상환일을<br>놓치지 않게.</h3>
+        <p>예정·완료·연체된 상환을 날짜별 금액과 함께 캘린더로 확인하세요. 상환일이 주말이나 공휴일이면 가장 가까운 영업일로 옮겨 표시합니다.</p>
+        <ul><li>상환일 전에 알림</li><li>홈 화면 위젯으로 바로 확인</li></ul>
+        <img class="shot" src="assets/ko/calendar.webp" alt="상환 캘린더 화면" width="775" height="1632" loading="lazy">
+      </article>
+      <article class="step" data-k="4">
+        <span class="no">05</span>
+        <h3>줄어드는 게<br>눈에 보입니다.</h3>
+        <p>대출 구성과 잔액 추이를 그래프로 보여 드립니다. 기록한 상환액은 원금과 이자로 자동 분리되니, 계획대로 가고 있는지 확인할 수 있습니다.</p>
+        <img class="shot" src="assets/ko/breakdown.webp" alt="대출 구성 원그래프와 잔액 추이 그래프" width="775" height="1632" loading="lazy">
+      </article>
+      <article class="step" data-k="5">
+        <span class="no">06</span>
+        <h3>월급날까지<br>돈이 버틸까요?<span class="tag">프리미엄</span></h3>
+        <p>월급, 월세 같은 수입과 지출을 입력하면 상환일마다 돈이 충분한지 미리 계산합니다. 돈이 부족해지는 날은 캘린더에 표시됩니다.</p>
+        <img class="shot" src="assets/ko/cashflow.webp" alt="날짜별 입출금과 잔액 예측이 표시된 자금 캘린더" width="775" height="1632" loading="lazy">
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="track">
+  <span>잔액</span><span>금리</span><span>상환일</span><span>무이자 기간</span><span>완제일</span><span>총이자</span><span>상환 캘린더</span><span>대환·통합</span>
+  <span>잔액</span><span>금리</span><span>상환일</span><span>무이자 기간</span><span>완제일</span><span>총이자</span><span>상환 캘린더</span><span>대환·통합</span>
+</div></div>
+
+<!-- シミュレーター -->
+<section class="sim sec" id="simulator">
+  <div class="wrap">
+    <p class="eyebrow reveal">TRY IT</p>
+    <h2 class="h2 reveal">완제일을<br><em>지금</em> 계산해 보세요.</h2>
+    <p class="lead reveal">슬라이더 세 개만 움직이면 됩니다. 매달 <span class="x-extra"></span> 더 갚으면 얼마나 빨리 끝나는지도 함께 보여 드려요.</p>
+    <div class="simbox reveal">
+      <form class="ctrls" id="simform" onsubmit="return false">
+        <div class="field"><label for="s-bal">잔액 <output id="o-bal" class="num"></output></label><input type="range" id="s-bal" min="900000" max="46000000" step="100000" value="9200000"></div>
+        <div class="field"><label for="s-rate">연이율 <output id="o-rate" class="num"></output></label><input type="range" id="s-rate" min="0" max="20" step="0.1" value="15"></div>
+        <div class="field"><label for="s-pay">월 상환액 <output id="o-pay" class="num"></output></label><input type="range" id="s-pay" min="50000" max="1800000" step="10000" value="280000"></div>
+      </form>
+      <div class="result" aria-live="polite">
+        <div class="big"><b>완제 예정</b><span class="num" id="r-date">—</span></div>
+        <div class="kpis">
+          <div><b>상환 기간</b><span class="num" id="r-len">—</span></div>
+          <div><b>총이자</b><span class="num warm" id="r-int">—</span></div>
+          <div><b>총 상환액</b><span class="num" id="r-tot">—</span></div>
+        </div>
+        <div class="mini"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path class="b" id="p-b"/><path class="a" id="p-a"/></svg></div>
+        <div class="legend"><span><i></i>현재 상환액</span><span><i class="g"></i>월 +<span class="x-extra"></span></span></div>
+        <p class="tip" id="r-tip"></p>
+      </div>
+    </div>
+    <p class="simnote">*단순 월이자(잔액 × 연이율 ÷ 12)로 계산한 대략적인 추정치입니다. 앱에서는 이자를 일 단위로 계산하며, 여러 대출에 상환액을 어떻게 나눌지도 비교할 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 安心 -->
+<section class="trust sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">PRIVACY</p>
+    <h2 class="h2 reveal">돈 이야기는<br><em>내 휴대폰 안에만</em>.</h2>
+    <div class="grid">
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18.5h4"/></svg></div><h3>데이터는 기기에만 저장</h3><p>대출 정보와 상환 기록은 서버로 전송되지 않습니다. iPhone의 iCloud 동기화는 직접 켰을 때만 사용됩니다.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg></div><h3>계정 필요 없음</h3><p>이메일 주소도, 이름도 필요 없습니다. 내려받고 바로 시작하세요.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M9 10v1M15 10v1M12 10v3.5h-1M9.5 16.5c1.4 1 3.6 1 5 0"/></svg></div><h3>Face ID·지문으로 잠금</h3><p>남에게 보여 주기 싫은 화면이니까, 앱을 열 때 Face ID나 지문 인증을 요구하도록 설정할 수 있습니다. 백업 파일 내보내기도 가능합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section class="price sec" id="price" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow reveal">PRICE</p>
+    <h2 class="h2 reveal">무료로,<br>원하는 만큼 계속.</h2>
+    <div class="grid">
+      <div class="plan reveal"><h3>무료</h3><p class="p num" id="p-free"></p><p class="s">광고 표시</p>
+        <ul><li>대출 관리(개수 제한 없음)</li><li>상환 시뮬레이션과 비교</li><li>상환 기록과 리포트</li><li>상환 캘린더·알림·위젯</li></ul></div>
+      <div class="plan pro reveal"><h3>프리미엄</h3><p class="p">1회 구매</p><p class="s">한 번만 결제하면 끝, 구독이 아닙니다. 현지 통화 가격은 스토어에서 확인하세요.</p>
+        <ul><li>모든 광고 제거</li><li>자금 캘린더로 보유 현금 예측</li><li>이번 달 상환 메모에 지출 예정 추가</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 要点（検索・AI の要約向け） -->
+<section class="aio" aria-labelledby="aio-h"><div class="wrap"><div class="box reveal"><h2 id="aio-h">빚 갚기 한눈에 보기</h2><ul><li>빚 갚기는 iPhone(iOS 17 이상)과 Android(8.0 이상)용 무료 부채 상환 플래너·관리 앱입니다.</li><li>모든 대출과 신용카드를 한곳에서 관리하고, 일 단위 이자 계산으로 완제일과 남은 이자를 계산합니다.</li><li>최소 금액만 상환, 고금리 우선(눈사태 방식), 소액 잔액 우선(눈덩이 방식) 등 상환 방식을 비교합니다.</li><li>상환 기록, 알림과 위젯이 있는 상환 캘린더를 제공하며, 무이자 기간과 금리 변경을 지원합니다.</li><li>데이터는 기기에만 저장되며 계정이 필요 없습니다. 프리미엄(광고 제거, 자금 캘린더)은 1회성 인앱 구매입니다.</li><li>16개 언어 지원: 영어, 일본어, 독일어, 스페인어, 프랑스어, 인도네시아어, 이탈리아어, 한국어, 포르투갈어(브라질), 태국어, 베트남어, 중국어(간체·번체), 아랍어, 터키어, 말레이어.</li></ul></div></div></section>
+
+<!-- FAQ -->
+<section class="faq sec" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow reveal">FAQ</p>
+      <h2 class="h2 reveal">자주 묻는 질문</h2>
+      <p class="contact reveal">해결되지 않았나요? <a href="mailto:s--y--business@outlook.com">이메일로 문의</a>해 주세요.<br><a href="support_ko.html">지원 페이지</a>도 참고해 주세요.</p>
+    </div>
+    <div>
+      <details><summary>앱의 잔액이 명세서와 조금 달라요.</summary><div class="a">이자는 잔액 × 연이율 ÷ 365 × 일수로 계산하기 때문에, 금융사마다 다른 끝수 처리로 약간의 차이가 생길 수 있습니다. 상환을 기록할 때 명세서의 이자나 상환 후 잔액을 입력하면 그 숫자를 기준으로 다시 계산합니다.</div></details>
+      <details><summary>무이자 기간이 있는 대출도 관리할 수 있나요?</summary><div class="a">네. 계약일과 무이자 일수를 입력하면 그 기간에는 우대 금리를, 이후에는 정상 금리를 적용합니다. 나중에 금리가 바뀌면 변경일과 새 금리를 추가할 수 있습니다.</div></details>
+      <details><summary>휴대폰을 바꾸면 어떻게 옮기나요?</summary><div class="a">설정 → 백업 내보내기로 파일을 저장한 뒤, 새 휴대폰에서 백업에서 복원을 선택하세요. 백업 파일은 iPhone과 Android에서 같은 형식이라 iPhone과 Android 사이에서도 옮길 수 있습니다. iCloud 동기화를 켠 iPhone끼리는 같은 Apple ID로 로그인하면 데이터가 그대로 이어집니다.</div></details>
+      <details><summary>프리미엄은 구독인가요?</summary><div class="a">아니요. 1회 구매입니다. 구매 후에는 같은 Apple ID(Android는 같은 Google 계정)로 로그인한 기기에서 구매 복원을 하면 됩니다. App Store와 Google Play 구매는 별개이므로 iPhone과 Android 사이에서는 프리미엄이 이어지지 않습니다.</div></details>
+      <details><summary>앱에서 대출이나 대환을 권유하나요?</summary><div class="a">아니요. 이 앱은 상환을 관리하고 계산하기 위한 도구입니다. 대출이나 대환을 권유하거나 조언하지 않습니다. 계산 결과는 추정치이니 실제 금액은 금융사 명세서로 확인해 주세요.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 相談窓口 -->
+<section class="help" aria-labelledby="help-h">
+  <div class="wrap">
+    <div><h2 id="help-h">혼자 감당하지 않아도 됩니다.</h2></div>
+    <div><p>상환이 버거워지면 일찍 금융사와 상의하거나, 무료로 상담해 주는 비영리 채무 상담 기관에 문의하세요. 빨리 물어볼수록 선택지가 많아집니다.</p></div>
+  </div>
+</section>
+
+<!-- 最後のCTA -->
+<section class="final">
+  <div class="wrap">
+    <img class="icon reveal" src="assets/icon-256.png" alt="" width="96" height="96" loading="lazy">
+    <h2 class="h2 reveal">0을 향한 카운트다운,<br>오늘 시작하세요.</h2>
+    <div class="cta reveal">
+      <a class="badge" href="https://apps.apple.com/app/id6816467747"><img src="assets/badges/as_ko.svg" alt="App Store에서 다운로드하기" height="58" style="height:58px;width:auto" style="height:58px"></a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.hensaikanri&amp;hl=ko"><img src="assets/badges/gp_ko.png" alt="Google Play에서 다운로드하기" height="58" style="height:58px;width:auto" style="height:58px"></a>
+      <small>무료 · iPhone(iOS 17 이상) · Android(8.0 이상)</small>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="#top"><img src="assets/icon-256.png" alt="" width="32" height="32" loading="lazy">빚 갚기</a>
+      <nav aria-label="바닥글"><a href="support_ko.html">지원</a><a href="privacy_en.html">개인정보 처리방침</a><a href="terms_en.html">이용약관</a><a href="mailto:s--y--business@outlook.com">문의</a></nav>
+    </div>
+    <div class="legal">
+      앱에서 계산한 결과는 추정치입니다. 실제 이자, 청구 금액, 잔액은 금융사의 명세서나 웹사이트에서 확인해 주세요. 이 앱은 대출, 대환, 상환 방법에 대한 조언을 제공하지 않으며 어떤 금융 상품도 권유하지 않습니다.<br>
+      Apple, Apple 로고, iPhone, Face ID는 미국 및 기타 국가에 등록된 Apple Inc.의 상표입니다. App Store는 Apple Inc.의 서비스 마크입니다. Android, Google Play 및 Google Play 로고는 Google LLC의 상표입니다.<br>
+      © 2026 빚 갚기
+    </div>
+      <nav class="langs" aria-label="언어"><span>언어:</span> <a href="index.html" hreflang="ja" lang="ja">日本語</a> <a href="index_en.html" hreflang="en" lang="en">English</a> <a href="index_de.html" hreflang="de" lang="de">Deutsch</a> <a href="index_es.html" hreflang="es" lang="es">Español</a> <a href="index_fr.html" hreflang="fr" lang="fr">Français</a> <a href="index_id.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="index_it.html" hreflang="it" lang="it">Italiano</a> <a href="index_ko.html" hreflang="ko" lang="ko" aria-current="page">한국어</a> <a href="index_pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="index_th.html" hreflang="th" lang="th">ไทย</a> <a href="index_vi.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="index_zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="index_zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="index_ar.html" hreflang="ar" lang="ar">العربية</a> <a href="index_tr.html" hreflang="tr" lang="tr">Türkçe</a> <a href="index_ms.html" hreflang="ms" lang="ms">Bahasa Melayu</a></nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const LOC = "ko-KR", CUR = "KRW", F = 9.2, EXTRA = 100000, T = {"js_cant": "상환 불가", "js_bad": "월 상환액이 한 달 이자(약 {int}) 이하입니다. 이대로는 잔액이 줄지 않습니다.", "js_good": "매달 {extra} 더 갚으면 {dur} 더 빨리 끝나고, 이자는 {save} 줄어듭니다."};
+  const money = new Intl.NumberFormat(LOC, {style:'currency', currency:CUR, maximumFractionDigits:0, minimumFractionDigits:0});
+  const yen = n => { const t = money.format(Math.round(n)); return CUR === 'TWD' ? t.replace('$', 'NT$').replace('NTNT$', 'NT$') : t; };
+  const ymLong = d => new Intl.DateTimeFormat(LOC, {year:'numeric', month:'short'}).format(d);
+  const unit = (n, u) => new Intl.NumberFormat(LOC, {style:'unit', unit:u, unitDisplay:'long'}).format(n);
+  const dur = m => [m >= 12 ? unit(Math.floor(m/12), 'year') : '', m % 12 ? unit(m % 12, 'month') : ''].filter(Boolean).join(' ');
+  document.querySelectorAll('.x-extra').forEach(e => e.textContent = yen(EXTRA));
+  const pf = document.getElementById('p-free'); if (pf) pf.textContent = yen(0);
+  const $ = s => document.querySelector(s);
+
+  /* ヘッダー：下へスクロールで隠れ、上へで出る */
+  const hd = $('#hd'); let lastY = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY;
+    hd.classList.toggle('solid', y > 20);
+    hd.classList.toggle('hide', y > 400 && y > lastY);
+    lastY = y;
+  }, {passive:true});
+
+  /* 表示されたらふわっと出す */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -10% 0px'});
+  document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 3) * 80 + 'ms'; io.observe(el); });
+
+  /* ── サンプルの借入で、毎月8万円・高金利優先の完済までを計算 ── */
+  const loans = [
+    {b:172256, r:.15, m:10000}, {b:405538, r:.145, m:10000}, {b:437361, r:.18, m:16000},
+    {b:1259886, r:.009, m:13000}, {b:80000, r:.18, m:4000}
+  ].map(l => ({...l, b:l.b*F, m:l.m*F}));
+  const budget = 780000, series = [];
+  let ls = loans.map(l => ({...l})), total = ls.reduce((s,l)=>s+l.b,0), mo = 0;
+  series.push(total);
+  while (total > 0.5 && mo < 240) {
+    ls.forEach(l => { if (l.b > 0) l.b += l.b * l.r / 12; });
+    let left = budget;
+    ls.forEach(l => { if (l.b > 0) { const p = Math.min(l.m, l.b, left); l.b -= p; left -= p; } });
+    ls.filter(l => l.b > 0).sort((a,b)=>b.r-a.r).forEach(l => { const p = Math.min(l.b, left); l.b -= p; left -= p; });
+    total = ls.reduce((s,l)=>s+Math.max(0,l.b),0); mo++; series.push(total);
+  }
+  series[series.length-1] = 0;
+  const start = new Date(2026, 9, 1);
+  const monthOf = i => { const d = new Date(start); d.setMonth(d.getMonth()+i); return d; };
+  const endD = monthOf(series.length-1);
+  const ym = d => `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}`;
+  $('#stampdate').textContent = ym(endD);
+  $('#enddate').textContent = ymLong(endD);
+  $('#c-total').textContent = yen(series[0]);
+  $('#c-budget').textContent = yen(budget);
+  $('#ax-end').textContent = ym(endD);
+
+  const W = 1000, H = 400, max = series[0];
+  const pt = i => [i/(series.length-1)*W, H - series[i]/max*H*0.92];
+  let d = '';
+  series.forEach((_, i) => { const [x,y] = pt(i); d += (i?'L':'M') + x.toFixed(1) + ' ' + y.toFixed(1); });
+  $('#curve').setAttribute('d', d);
+  $('#area').setAttribute('d', d + `L${W} ${H}L0 ${H}Z`);
+
+  const story = $('#story'), bal = $('#bal'), mon = $('#mon'), clip = $('#cliprect'), halo = $('#halo'), stamp = $('#stamp');
+  const caps = story.querySelectorAll('.caps p');
+  let ticking = false;
+  const drawStory = () => {
+    ticking = false;
+    const r = story.getBoundingClientRect(), span = r.height - innerHeight;
+    const p = reduce ? 1 : Math.min(1, Math.max(0, -r.top / span));
+    const q = Math.min(1, Math.max(0, (p - .08) / .82));        // 最初と最後に少し「間」をつくる
+    const f = q * (series.length - 1), i = Math.floor(f), t = f - i;
+    const v = i >= series.length - 1 ? 0 : series[i] + (series[i+1] - series[i]) * t;
+    bal.textContent = yen(v);
+    mon.textContent = ym(monthOf(Math.round(f)));
+    clip.setAttribute('width', (q * W + 2).toFixed(1));
+    const [x, y] = (() => { const a = pt(Math.min(i, series.length-1)), b = pt(Math.min(i+1, series.length-1)); return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t]; })();
+    halo.setAttribute('cx', x); halo.setAttribute('cy', y); halo.setAttribute('r', q > 0 && q < 1 ? 10 : 0);
+    const k = q < .3 ? 0 : q < .92 ? 1 : 2;
+    caps.forEach((c, j) => c.classList.toggle('on', j === k));
+    stamp.classList.toggle('on', q >= .995);
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(drawStory); } }, {passive:true});
+  addEventListener('resize', drawStory);
+  drawStory();
+
+  /* ── 機能：説明に合わせてスマホの画面を切り替える ── */
+  const imgs = document.querySelectorAll('.device img'), steps = document.querySelectorAll('.step');
+  const so = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const k = e.target.dataset.k;
+    steps.forEach(s => s.classList.toggle('on', s === e.target));
+    imgs.forEach(im => im.classList.toggle('on', im.dataset.k === k));
+  }), {rootMargin:'-45% 0px -45% 0px'});
+  steps.forEach(s => so.observe(s));
+
+  /* ── 完済シミュレーター ── */
+  const sb = $('#s-bal'), sr = $('#s-rate'), sp = $('#s-pay');
+  const run = (B, r, P) => {
+    let b = B, m = 0, int = 0; const pts = [b];
+    while (b > 0 && m < 600) { const i = b * r / 12; if (P <= i) return null; int += i; b = b + i - P; m++; pts.push(Math.max(0, b)); }
+    return {m, int, pts};
+  };
+  const path = (pts, n, top) => pts.map((v, i) => (i?'L':'M') + (i/n*600).toFixed(1) + ' ' + (200 - v/top*190).toFixed(1)).join('');
+  const fill = el => el.style.setProperty('--p', ((el.value - el.min) / (el.max - el.min) * 100) + '%');
+  const update = () => {
+    const B = +sb.value, r = +sr.value / 100, P = +sp.value;
+    $('#o-bal').textContent = yen(B);
+    $('#o-rate').innerHTML = (+sr.value).toFixed(1) + '<small>%</small>';
+    $('#o-pay').textContent = yen(P);
+    [sb, sr, sp].forEach(fill);
+    const a = run(B, r, P), b = run(B, r, P + EXTRA), tip = $('#r-tip');
+    if (!a) {
+      $('#r-date').textContent = T.js_cant; ['#r-len','#r-int','#r-tot'].forEach(s => $(s).textContent = '—');
+      $('#p-a').setAttribute('d', ''); $('#p-b').setAttribute('d', '');
+      tip.className = 'tip bad'; tip.textContent = T.js_bad.replace('{int}', yen(B*r/12));
+      return;
+    }
+    const now = new Date(); const end = new Date(now.getFullYear(), now.getMonth() + a.m, 1);
+    $('#r-date').textContent = ymLong(end);
+    $('#r-len').textContent = dur(a.m);
+    $('#r-int').textContent = yen(a.int);
+    $('#r-tot').textContent = yen(B + a.int);
+    const n = a.m;
+    $('#p-a').setAttribute('d', path(a.pts, n, B));
+    $('#p-b').setAttribute('d', b ? path(b.pts, n, B) : '');
+    tip.className = 'tip';
+    tip.textContent = b ? T.js_good.replace('{extra}', yen(EXTRA)).replace('{dur}', dur(a.m - b.m)).replace('{save}', yen(a.int - b.int)) : '';
+  };
+  [sb, sr, sp].forEach(el => el.addEventListener('input', update));
+  update();
+})();
+</script>
+</body>
+</html>
